@@ -104,9 +104,13 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: left;
   padding: 2rem;
   /* padding-top: 3rem; */
   gap: 1.5rem;
   color: #ffffff;
+}
+
+.intro-text-box h1 {
+  font-size: 2.5rem;
 }
