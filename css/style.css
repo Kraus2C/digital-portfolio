@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 /*
 Demo unique font variation
 .manual-bold-text {
@@ -39,7 +40,7 @@ html {
 
 /* Body styles */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   background: white;
@@ -121,34 +122,53 @@ a:active {
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
+  min-height: 700px;
 }
 
-.hero-one {
-  flex: 1 1 auto;
+.hero-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+  color: #101720;
 }
 
-.hero-two {
-  flex: 1 1 auto;
+.hero-text h1 strong {
+  background: linear-gradient(45deg, #6b62ec, #5076ff, #3ac8fb);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-weight: 500;
+  z-index: 1;
+}
+
+
+/* .hero-two {
+  flex: 1;
   background-color: #DEEFF5;
-}
+} */
 
-.hero-gradient-box {
+/* .hero-gradient-box {
   position: absolute;
   top: 10%;
   left: 45%;
   width: 35%;
   height: 75%;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
-}
+} */
 
-.hero-image {
+/* .hero-image {
   position: absolute;
   top: 15%;
   left: 48%;
   width: 35%;
   height: 75%;
   background-color: lightgrey;
-}
+} */
