@@ -5,26 +5,16 @@
 }
 
 
-/*
-Demo unique font variation
-.manual-bold-text {
-  font-family: 'Roboto Flex', sans-serif;
-  font-variation-settings: 'wght' 700;
-}
-*/
+
 
 /* Header styles */
-/* Group better; differentiate application */
 header {
   background: #101720;
-  /* border-bottom-right-radius: 24px;
-  border-bottom-left-radius : 24px; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   /* webkit-backdrop-filter: blur(10px); - Test Safari compatibility 🤔*/
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -38,14 +28,15 @@ html {
   background-color: #101720;
 }
 
+
+
+
 /* Body styles */
 body {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   background: white;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5); */
-  /* overflow: hidden; */
   min-height: 100vh;
   margin: 0;  
 }
@@ -53,9 +44,7 @@ body {
 a:link {
   color: #ffffff;
   text-decoration: none;
-  /* if put on hover, snaps OFF */
-  transition: color 0.4s ease, transform 0.4s ease;
-  /* display: inline-block; */
+  transition: color 0.4s ease, transform 0.4s ease;   /* if put on hover, snaps OFF */
 }
 
 a:visited {
@@ -81,8 +70,6 @@ a:active {
 .intro {
   padding: 0;
   position: relative; /* Relative for absolute children */
-
-  /* 90% vh, no less than 700px */
   min-height: 700px;
   height: 90vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
@@ -120,7 +107,8 @@ a:active {
 
 .hero {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   height: 90vh;
   width: 100vw;
@@ -128,12 +116,12 @@ a:active {
 }
 
 .hero-text {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   color: #101720;
+  padding-bottom: 2vh;
 }
 
 .hero-text h1 strong {
@@ -149,26 +137,10 @@ a:active {
   z-index: 1;
 }
 
-
-/* .hero-two {
-  flex: 1;
-  background-color: #DEEFF5;
-} */
-
-/* .hero-gradient-box {
-  position: absolute;
-  top: 10%;
-  left: 45%;
-  width: 35%;
-  height: 75%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
-} */
-
-/* .hero-image {
-  position: absolute;
-  top: 15%;
-  left: 48%;
-  width: 35%;
-  height: 75%;
-  background-color: lightgrey;
+/* .skill-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 } */
