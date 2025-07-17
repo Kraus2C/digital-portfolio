@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link rel="preload" href="js/transition.js" as="script">
         <link rel="preload" href="js/title.js" as="script">
         <link rel="prefetch" href="index.html">
         <link rel="prefetch" href="projects.html">
@@ -32,6 +33,17 @@
                     <h1>I'm <strong>Curtis Kraus</strong>, a
                     Cyber Security Undergraduate</h1>
                 </div>
+
+                <span class="static-text">I'm <strong>Curtis Kraus</strong>, a</span>
+                <div class="dynamic-text-container">
+                    <ul class="dynamic-text"> 
+                        <li>Cyber Security Undergraduate</li>
+                        <li>Test Tag One</li>
+                        <li>Test Tag Two</li>
+                        <li>Test Tag Three</li>
+                    </ul>
+                </div>
+
                 <!-- <section class="skill-tags">
                     <div class="skill">One</div>
                     <div class="skill">Two</div>
@@ -55,5 +67,6 @@
 
         </footer>
         <script src="js/title.js" type="module" defer></script>
+        <script src="js/transition.js" type="module" defer></script>
     </body>
 </html>

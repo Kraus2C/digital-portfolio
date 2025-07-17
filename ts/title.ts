@@ -1,10 +1,10 @@
-const ORIGINALTITLE: string = "Kraus2C";
-const AWAYTITLE: string = "Hey, come back! 😢";
+const ORIGINAL_TITLE: string = "Kraus2C";
+const HIDDEN_TITLE: string = "Hey, come back! 😢";
 
 document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
-        document.title = AWAYTITLE;
+        document.title = HIDDEN_TITLE;
     } else {
-        document.title = ORIGINALTITLE;
+        document.title = ORIGINAL_TITLE;
     }
 });
