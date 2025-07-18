@@ -32,6 +32,16 @@ html {
 
 
 /* Body styles */
+.current-page {
+  cursor: default;
+  font-weight: 500;
+  color: #ffffff;
+  transition: transform 0.4s ease;
+}
+.current-page:hover {
+  transform: translateY(-3px);
+}
+
 body {
   font-family: 'Roboto Flex', sans-serif;
   font-size: 1rem;

@@ -21,6 +21,7 @@ document.querySelectorAll('a[href^="index"], a[href^="about"], a[href^="projects
 
     // "e" is simply just an event object called e
     link.addEventListener('click', function(e: Event): void {
+
         // Prevent default event value (opening the page when
         // clicking links)
         e.preventDefault();
