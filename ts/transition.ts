@@ -18,7 +18,7 @@ window.addEventListener('pageshow', function(event: PageTransitionEvent): void {
 });
 
 // Handles the "fade-out" when transitioning between pages
-document.querySelectorAll('a[href^="index"], a[href^="about"], a[href^="projects"], a[href^="contact"]').forEach((link: Element) => {
+document.querySelectorAll('a[href^="index"], a[href^="about"], a[href^="projects"]').forEach((link: Element) => {
     // Listens for the "click" event we call "e"
     link.addEventListener('click', function(e: Event): void {
         // Prevent default event behavior
