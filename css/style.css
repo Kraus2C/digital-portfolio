@@ -128,7 +128,7 @@ a:active {
   justify-content: center;
   position: relative;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   min-height: 700px;
 }
 
@@ -161,3 +161,25 @@ a:active {
   align-items: center;
   gap: 2rem;
 } */
+
+/* Carousel CSS stub
+.text-container {
+  display: flex;
+  align-items: baseline;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.static-text {
+  white-space: nowrap;
+}
+.dynamic-text-container {
+  height: 4.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.dynamic-text {
+  line-height: 4.5rem;
+  color: #42a5f5;
+  text-align: left;
+}
+*/
