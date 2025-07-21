@@ -118,10 +118,6 @@ a:active {
   line-height: 2.5;
 } */
 
-.intro-text-box h1 {
-  font-size: 2.5rem;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -139,6 +135,7 @@ a:active {
   background-color: white;
   color: #101720;
   padding-bottom: 2vh;
+  font-size: 1.5rem;
 }
 
 .hero-text h1 strong {
