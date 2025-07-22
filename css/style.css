@@ -92,52 +92,29 @@ a:active {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
 }
 
-/* .intro-text-box {
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  width: 35%;
-  min-width: 400px;
-  aspect-ratio: 2 / 1;
-
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 24px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding: 2rem;
-  /* padding-top: 3rem; */
-  /* gap: 1rem; */
-  /* color: #ffffff;
-  font-size: 0.9rem;
-  line-height: 2.5;
-} */
-
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* Centers the content wrapper */
   position: relative;
   height: 90vh;
   width: 100%;
   min-height: 700px;
 }
-
-.hero-text {
+.hero-content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Centers hero-text */
+}
+.hero-text {
   background-color: white;
   color: #101720;
   padding-bottom: 2vh;
   font-size: 1.5rem;
+  cursor: default;
+  display: inline-block;
 }
-
 .hero-text h1 strong {
   background: linear-gradient(45deg, #6b62ec, #5076ff, #3ac8fb);
   background-clip: text;
@@ -145,7 +122,6 @@ a:active {
   font-weight: 700;
   z-index: 1;
 }
-
 .hero-text h1 {
   font-weight: 500;
   z-index: 1;
@@ -156,12 +132,11 @@ a:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; /* Aligns tags to left of container */
   align-items: center;
   padding-top: 1rem;
   gap: 0.6rem;
 }
-
 .skill {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(106, 98, 236, 0.2);
@@ -183,7 +158,7 @@ a:active {
 }
 .T2 {
   background: rgba(100, 140, 230, 0.15); 
-    color: rgb(85, 91, 169);
+  color: #665fc5;
 }
 .T1 {
   background: rgba(120, 120, 140, 0.15);
