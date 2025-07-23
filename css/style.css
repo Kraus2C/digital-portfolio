@@ -12,7 +12,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  transition: ease-in-out 0.3s;
+  transition: top 0.3s ease-in-out;
 
   background: #101720;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -28,7 +28,7 @@ header {
   padding-bottom: 0.8rem;
 }
 
-.header.header--hidden {
+header.header--hidden {
   top: -100px;
 }
 
