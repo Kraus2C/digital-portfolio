@@ -1,13 +1,61 @@
-/* Reset default styles */
+/* 
+ * ===== RESET & BASE STYLES =====
+ */
 * {
   margin: 0;
   padding: 0;
 }
 
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background: white;
+  min-height: 100vh;
+  margin: 0; 
+
+  opacity: 0; /* Start hidden for transition */
+  transition: opacity 0.3s ease-in; /* Smooth transition for visibility change */
+}
+
+body.loaded {
+  opacity: 1; /* Fade in when loaded */
+}
 
 
+/* 
+ * ===== GLOBAL LINKS =====
+ */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.4s ease; /* if put on hover, snaps OFF */
+}
 
-/* Header styles */
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* 
+ * ===== HEADER SECTION =====
+ */
 header {
   position: fixed;
   top: 0;
@@ -32,14 +80,9 @@ header.header--hidden {
   top: -100px;
 }
 
-html {
-  background-color: #ffffff;
-}
-
-
-/* Body styles */
-main {
-  padding-top: 45px;
+/* Header Navigation */
+.logo {
+  color: #ffffff;
 }
 
 .current-page {
@@ -48,52 +91,23 @@ main {
   color: #ffffff;
   transition: transform 0.4s ease;
 }
+
 .current-page:hover {
   transform: translateY(-2px);
 }
 
-body {
-  font-family: 'Roboto Flex', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  background: white;
-  min-height: 100vh;
-  margin: 0; 
 
-  opacity: 0; /*Start hidden for transition*/
-  transition: opacity 0.3s ease-in; /*Smooth transition for visibility change */
+/* 
+ * ===== MAIN CONTENT SECTION =====
+ */
+main {
+  padding-top: 45px;
 }
 
-body.loaded {
-  opacity: 1; /*Fade in when loaded*/
-}
 
-a:link {
-  color: #ffffff;
-  text-decoration: none;
-  transition: transform 0.4s ease;   /* if put on hover, snaps OFF */
-}
-
-a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  transform: translateY(-2px);
-}
-
-a:active {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.logo {
-  color: #ffffff;
-}
-
+/* 
+ * ===== HERO SECTION =====
+ */
 .intro {
   padding: 0;
   position: relative; /* Relative for absolute children */
@@ -112,11 +126,14 @@ a:active {
   width: 100%;
   min-height: 700px;
 }
+
 .hero-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centers hero-text */
 }
+
+/* Hero Text Elements */
 .hero-text {
   background-color: white;
   color: #101720;
@@ -125,6 +142,12 @@ a:active {
   cursor: default;
   display: inline-block;
 }
+
+.hero-text h1 {
+  font-weight: 500;
+  z-index: 1;
+}
+
 .hero-text h1 strong {
   background: linear-gradient(45deg, #6b62ec, #5076ff, #3ac8fb);
   background-clip: text;
@@ -132,12 +155,11 @@ a:active {
   font-weight: 700;
   z-index: 1;
 }
-.hero-text h1 {
-  font-weight: 500;
-  z-index: 1;
-}
 
-/* Skill tags styles */
+
+/* 
+ * ===== SKILL TAGS SECTION =====
+ */
 .skill-tags {
   display: flex;
   flex-direction: row;
@@ -148,6 +170,8 @@ a:active {
   gap: 0.6rem;
   width: 100%;
 }
+
+/* Individual Skill Tag */
 .skill {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(106, 98, 236, 0.2);
@@ -158,20 +182,25 @@ a:active {
   transition: all 0.2s ease;
   will-change: transform, box-shadow; /* expensive */
 }
+
 .skill:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   background: rgba(106, 98, 236, 0.12);
   transform: translateY(-2px);
   cursor: default;
 }
+
+/* Skill Tag Variants */
 .T3 {
   background: rgba(45, 105, 255, 0.22);
   color: #6b62ec;
 }
+
 .T2 {
   background: rgba(100, 140, 230, 0.15); 
   color: #665fc5;
 }
+
 .T1 {
   background: rgba(120, 120, 140, 0.15);
   color: rgb(89, 93, 146);
