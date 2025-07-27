@@ -205,3 +205,75 @@ main {
   background: rgba(120, 120, 140, 0.15);
   color: rgb(89, 93, 146);
 }
+
+
+/* 
+ * ===== RESUME SECTION =====
+ */
+.resume-wrapper {
+  display: flex;
+}
+
+.resume-container-A,
+.resume-container-B {
+  aspect-ratio: 1.8 / 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resume-container-A {
+  background: #101720;
+  color: white;
+}
+
+.resume-container-B {
+  color: black;
+}
+
+.resume-container-A h1,
+.resume-container-B h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.resume-container-A h1 strong {
+  background: linear-gradient(45deg, #e86b28, #eb8e42, #d1f454);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.filetype {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+}
+
+/* Download Button */
+.download-btn {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(205, 44, 44, 0.2);
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  will-change: transform, box-shadow;
+  background: rgba(120, 120, 140, 0.15);
+  color: orangered !important;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  background: rgba(236, 139, 98, 0.12);
+  transform: translateY(-2px);
+  color: orangered;
+}
